@@ -30,7 +30,7 @@ const Login = (props) => {
                 buttonText: "Okay",
                 duration: 3000
             })
-            props.navigation.navigate('Home')
+            props.navigation.navigate('HomePageNav')
         }
         else {
             Toast.show({
