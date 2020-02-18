@@ -30,6 +30,7 @@ const Login = (props) => {
                 buttonText: "Okay",
                 duration: 3000
             })
+            props.navigation.navigate('Home')
         }
         else {
             Toast.show({
@@ -51,7 +52,7 @@ const Login = (props) => {
                 </View>
                 <Form style={styles.FormContainer}>
                     <Item stackedLabel>
-                        <Label>Username</Label>
+                        <Label>Email</Label>
                         <Input autoCapitalize='none' value={value.email} onChangeText={(text) => setValue({ ...value, email: text })} />
                     </Item>
                     <Item stackedLabel>
